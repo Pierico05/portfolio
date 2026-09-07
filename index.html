@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio de Pierryck Seguela, étudiant en audiovisuel à Ynov Campus Lille. Création et production de contenus visuels, montage, VFX et étalonnage." data-i18n="meta.description">
+  <meta name="author" content="Pierryck Seguela">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Pierryck Seguela — Étudiant en audiovisuel" data-i18n="meta.title">
+  <meta property="og:description" content="Portfolio de Pierryck Seguela, étudiant en audiovisuel à Ynov Campus Lille. Création et production de contenus visuels, montage, VFX et étalonnage." data-i18n="meta.description">
+  <meta property="og:image" content="assets/images/og.jpg">
+  <title data-i18n="meta.title">Pierryck Seguela — Étudiant en audiovisuel</title>
+  <link rel="icon" href="assets/images/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicon-192.png">
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css?v=20">
+</head>
+<body>
+  <header>
+    <nav class="navbar" id="navbar">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-links" data-i18n-aria="nav.menu">
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" data-i18n="nav.home"></a></li>
+        <li><a href="#about" data-i18n="nav.about"></a></li>
+        <li><a href="#experience" data-i18n="nav.experience"></a></li>
+        <li><a href="#projects" data-i18n="nav.projects"></a></li>
+        <li><a href="#stack" data-i18n="nav.stack"></a></li>
+        <li><a href="#contact" data-i18n="nav.contact"></a></li>
+      </ul>
+      <div class="lang-switcher">
+        <button type="button" class="lang-btn" data-lang="en" aria-label="English">EN</button>
+        <button type="button" class="lang-btn" data-lang="fr" aria-label="Français">FR</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="floating-icons" id="floating-icons" aria-hidden="true"></div>
+      <div class="hero-layout">
+        <div class="hero-content">
+          <div class="hero-identity fade-up">
+            <span class="gold-bar" aria-hidden="true"></span>
+            <div>
+              <h1 class="hero-greeting" data-i18n="hero.greeting"></h1>
+              <p class="hero-role" data-i18n="hero.role"></p>
+            </div>
+          </div>
+          <p class="hero-kicker fade-up" data-i18n="hero.kicker"></p>
+          <p class="hero-field fade-up" data-i18n="hero.field"></p>
+          <p class="hero-duration fade-up" data-i18n="hero.duration"></p>
+          <p class="hero-location fade-up">
+            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+            <span data-i18n="hero.location"></span>
+          </p>
+          <div class="hero-ctas fade-up">
+            <a href="#projects" class="btn btn-primary"><i class="fas fa-film" aria-hidden="true"></i><span data-i18n="hero.ctaWork"></span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title fade-up" data-i18n="about.title"></h2>
+        <div class="about-content">
+          <div class="profile-frame fade-up">
+            <img src="assets/images/profile.jpg" alt="" width="300" height="300" class="profile-img" data-i18n-alt="about.imgAlt">
+          </div>
+          <div class="about-text fade-up">
+            <p class="about-hook" data-i18n="about.hook"></p>
+            <p data-i18n="about.p1"></p>
+            <p data-i18n="about.p2"></p>
+            <ul class="about-meta">
+              <li><i class="fas fa-envelope" aria-hidden="true"></i><a href="mailto:pierryck.seguela@gmail.com">pierryck.seguela@gmail.com</a></li>
+              <li><i class="fas fa-calendar-alt" aria-hidden="true"></i><span data-i18n="about.birthdate"></span></li>
+              <li><i class="fas fa-id-card" aria-hidden="true"></i><span data-i18n="about.license"></span></li>
+            </ul>
+            <h3 class="about-subtitle" data-i18n="about.hobbiesTitle"></h3>
+            <ul class="hobby-list">
+              <li data-i18n="about.hobby1"></li>
+              <li data-i18n="about.hobby2"></li>
+              <li data-i18n="about.hobby3"></li>
+            </ul>
+            <div class="social-links">
+              <a href="https://www.linkedin.com/in/pierryck-seguela-383839272/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+              </a>
+              <a href="mailto:pierryck.seguela@gmail.com" class="social-link" aria-label="Email">
+                <i class="fas fa-envelope" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="experience">
+      <div class="container">
+        <h2 class="section-title fade-up" data-i18n="experience.title"></h2>
+        <div class="timeline" id="timeline"></div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2 class="section-title fade-up" data-i18n="projects.title"></h2>
+        <div class="projects-grid">
+          <a class="project-card fade-up" id="projets-photo" href="projet-photo.html">
+            <div class="project-image">
+              <img src="photos/packshot.jpg" alt="" width="1600" height="900" data-i18n-alt="projects.photo.imgAlt">
+              <div class="project-overlay" aria-hidden="true">
+                <i class="fas fa-expand"></i>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">
+                <i class="fas fa-camera" aria-hidden="true"></i>
+                <span data-i18n="projects.photo.title"></span>
+              </h3>
+              <p class="project-description" data-i18n="projects.photo.description"></p>
+              <div class="tech-tags">
+                <span class="tech-tag"><i class="fas fa-camera" aria-hidden="true"></i><span data-i18n="projects.tech.photo"></span></span>
+                <span class="tech-tag"><i class="fas fa-sliders-h" aria-hidden="true"></i><span data-i18n="projects.tech.color"></span></span>
+              </div>
+              <span class="project-link">
+                <span data-i18n="projects.photo.cta"></span>
+                <span class="arrow" aria-hidden="true">→</span>
+              </span>
+            </div>
+          </a>
+
+          <a class="project-card project-card-video fade-up" id="projets-video" href="projet-video.html">
+            <div class="project-image">
+              <img src="photos/backshot.jpg" alt="" width="1600" height="900" data-i18n-alt="projects.video.imgAlt">
+              <div class="project-overlay" aria-hidden="true">
+                <i class="fas fa-play"></i>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">
+                <i class="fas fa-video" aria-hidden="true"></i>
+                <span data-i18n="projects.video.title"></span>
+              </h3>
+              <p class="project-description" data-i18n="projects.video.description"></p>
+              <div class="tech-tags">
+                <span class="tech-tag"><i class="fas fa-film" aria-hidden="true"></i><span data-i18n="projects.tech.davinci"></span></span>
+                <span class="tech-tag"><i class="fas fa-video" aria-hidden="true"></i><span data-i18n="projects.tech.premiere"></span></span>
+                <span class="tech-tag"><i class="fas fa-cut" aria-hidden="true"></i><span data-i18n="projects.tech.edit"></span></span>
+              </div>
+              <span class="project-link">
+                <span data-i18n="projects.video.cta"></span>
+                <span class="arrow" aria-hidden="true">→</span>
+              </span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="stack" class="stack">
+      <div class="container">
+        <h2 class="section-title fade-up" data-i18n="stack.title"></h2>
+        <div class="stack-categories" id="stack-categories"></div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container contact-container">
+        <h2 class="section-title fade-up" data-i18n="contact.title"></h2>
+        <div class="contact-buttons fade-up">
+          <a href="mailto:pierryck.seguela@gmail.com" class="btn btn-primary">
+            <i class="fas fa-envelope" aria-hidden="true"></i>
+            <span data-i18n="contact.email"></span>
+          </a>
+          <a href="https://www.linkedin.com/in/pierryck-seguela-383839272/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+            <span data-i18n="contact.linkedin"></span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p data-i18n="footer.copyright"></p>
+  </footer>
+
+  <script src="js/translations.js?v=20"></script>
+  <script src="js/main.js?v=19"></script>
+</body>
+</html>

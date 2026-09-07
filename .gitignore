@@ -1,0 +1,12 @@
+# Infos perso — ne pas publier
+CV SEGUELA PIERRYCK.txt
+instructions.txt
+photo de profil.jpg
+
+# Vidéos trop lourdes pour GitHub (>100 Mo) — restent en local
+videos/*.mp4
+
+# Système
+Thumbs.db
+Desktop.ini
+.DS_Store

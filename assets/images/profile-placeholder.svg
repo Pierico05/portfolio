@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300" role="img" aria-label="Profile placeholder">
+  <rect width="300" height="300" fill="#1a1a1a"/>
+  <circle cx="150" cy="150" r="148" fill="#0f0f0f" stroke="#c8a96e" stroke-width="4"/>
+  <circle cx="150" cy="118" r="42" fill="#2a2a2a"/>
+  <ellipse cx="150" cy="210" rx="70" ry="48" fill="#2a2a2a"/>
+  <text x="150" y="278" text-anchor="middle" fill="#c8a96e" font-family="Poppins, Arial, sans-serif" font-size="14" font-weight="500">PS</text>
+</svg>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Travaux photo de Pierryck Seguela : prise de vue, lumière et étalonnage — automobile, packshot, architecture, paysage, portrait et nature." data-i18n="project.photo.metaDescription">
+  <meta name="author" content="Pierryck Seguela">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Projet photo — Pierryck Seguela" data-i18n="project.photo.metaTitle">
+  <meta property="og:description" content="Travaux photo de Pierryck Seguela : prise de vue, lumière et étalonnage — automobile, packshot, architecture, paysage, portrait et nature." data-i18n="project.photo.metaDescription">
+  <meta property="og:image" content="assets/images/og.jpg">
+  <title data-i18n="project.photo.metaTitle">Projet photo — Pierryck Seguela</title>
+  <link rel="icon" href="assets/images/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicon-192.png">
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css?v=20">
+</head>
+<body>
+  <header>
+    <nav class="navbar" id="navbar">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-links" data-i18n-aria="nav.menu">
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html#home" data-i18n="nav.home"></a></li>
+        <li><a href="index.html#about" data-i18n="nav.about"></a></li>
+        <li><a href="index.html#experience" data-i18n="nav.experience"></a></li>
+        <li><a href="index.html#projects" data-i18n="nav.projects"></a></li>
+        <li><a href="index.html#stack" data-i18n="nav.stack"></a></li>
+        <li><a href="index.html#contact" data-i18n="nav.contact"></a></li>
+      </ul>
+      <div class="lang-switcher">
+        <button type="button" class="lang-btn" data-lang="en" aria-label="English">EN</button>
+        <button type="button" class="lang-btn" data-lang="fr" aria-label="Français">FR</button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="project-page">
+    <div class="container">
+      <a href="index.html#projects" class="project-back fade-up">
+        <span class="arrow" aria-hidden="true">←</span>
+        <span data-i18n="project.back"></span>
+      </a>
+      <p class="project-kicker fade-up" data-i18n="project.photo.kicker"></p>
+      <h1 class="fade-up" data-i18n="project.photo.pageTitle"></h1>
+      <ul class="project-meta fade-up">
+        <li><span><i class="fas fa-camera" aria-hidden="true"></i><span data-i18n="project.photo.role"></span></span></li>
+        <li><span><i class="fas fa-lightbulb" aria-hidden="true"></i><span data-i18n="project.photo.light"></span></span></li>
+        <li><span><i class="fas fa-sliders-h" aria-hidden="true"></i><span data-i18n="project.photo.color"></span></span></li>
+      </ul>
+      <div class="project-copy fade-up">
+        <p data-i18n="project.photo.p1"></p>
+        <p data-i18n="project.photo.p2"></p>
+      </div>
+      <div class="project-photo-grid fade-up">
+        <button type="button" class="photo-thumb" data-gallery-index="0">
+          <img src="photos/aston-martin.jpg" alt="" data-i18n-alt="projects.photo1Alt">
+        </button>
+        <button type="button" class="photo-thumb" data-gallery-index="1">
+          <img src="photos/packshot.jpg" alt="" data-i18n-alt="projects.photo2Alt">
+        </button>
+        <button type="button" class="photo-thumb" data-gallery-index="2">
+          <img src="photos/facade.jpg" alt="" data-i18n-alt="projects.photo3Alt">
+        </button>
+        <button type="button" class="photo-thumb" data-gallery-index="3">
+          <img src="photos/pont.jpg" alt="" data-i18n-alt="projects.photo4Alt">
+        </button>
+        <button type="button" class="photo-thumb" data-gallery-index="4">
+          <img src="photos/portrait.jpg" alt="" data-i18n-alt="projects.photo5Alt">
+        </button>
+        <button type="button" class="photo-thumb" data-gallery-index="5">
+          <img src="photos/fleur.jpg" alt="" data-i18n-alt="projects.photo6Alt">
+        </button>
+      </div>
+      <div class="tech-tags fade-up">
+        <span class="tech-tag"><i class="fas fa-camera" aria-hidden="true"></i><span data-i18n="projects.tech.photo"></span></span>
+        <span class="tech-tag"><i class="fas fa-sliders-h" aria-hidden="true"></i><span data-i18n="projects.tech.color"></span></span>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p data-i18n="footer.copyright"></p>
+  </footer>
+
+  <div class="gallery" id="gallery" hidden>
+    <div class="gallery-backdrop" data-gallery-close></div>
+    <div class="gallery-dialog" role="dialog" aria-modal="true" aria-labelledby="gallery-title">
+      <h2 id="gallery-title" class="visually-hidden"></h2>
+      <button type="button" class="gallery-close" data-gallery-close data-i18n-aria="gallery.close">
+        <i class="fas fa-times" aria-hidden="true"></i>
+      </button>
+      <button type="button" class="gallery-nav gallery-prev" data-i18n-aria="gallery.prev">
+        <i class="fas fa-chevron-left" aria-hidden="true"></i>
+      </button>
+      <div class="gallery-stage">
+        <img id="gallery-image" alt="">
+        <video id="gallery-video" controls playsinline preload="metadata"></video>
+      </div>
+      <button type="button" class="gallery-nav gallery-next" data-i18n-aria="gallery.next">
+        <i class="fas fa-chevron-right" aria-hidden="true"></i>
+      </button>
+      <p class="gallery-caption" id="gallery-caption"></p>
+    </div>
+  </div>
+
+  <script src="js/translations.js?v=20"></script>
+  <script src="js/main.js?v=19"></script>
+</body>
+</html>

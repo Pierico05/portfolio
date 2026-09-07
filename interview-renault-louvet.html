@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Interview de Renault Louvet, réalisée par Pierryck Seguela en première année de bachelor audiovisuel à Ynov Campus Lille." data-i18n="project.interview.metaDescription">
+  <meta name="author" content="Pierryck Seguela">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Interview de Renault Louvet — Pierryck Seguela" data-i18n="project.interview.metaTitle">
+  <meta property="og:description" content="Interview de Renault Louvet, réalisée par Pierryck Seguela en première année de bachelor audiovisuel à Ynov Campus Lille." data-i18n="project.interview.metaDescription">
+  <meta property="og:image" content="assets/images/og.jpg">
+  <title data-i18n="project.interview.metaTitle">Interview de Renault Louvet — Pierryck Seguela</title>
+  <link rel="icon" href="assets/images/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicon-192.png">
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css?v=20">
+</head>
+<body>
+  <header>
+    <nav class="navbar" id="navbar">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-links" data-i18n-aria="nav.menu">
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html#home" data-i18n="nav.home"></a></li>
+        <li><a href="index.html#about" data-i18n="nav.about"></a></li>
+        <li><a href="index.html#experience" data-i18n="nav.experience"></a></li>
+        <li><a href="index.html#projects" data-i18n="nav.projects"></a></li>
+        <li><a href="index.html#stack" data-i18n="nav.stack"></a></li>
+        <li><a href="index.html#contact" data-i18n="nav.contact"></a></li>
+      </ul>
+      <div class="lang-switcher">
+        <button type="button" class="lang-btn" data-lang="en" aria-label="English">EN</button>
+        <button type="button" class="lang-btn" data-lang="fr" aria-label="Français">FR</button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="project-page">
+    <div class="container">
+      <a href="projet-video.html" class="project-back fade-up">
+        <span class="arrow" aria-hidden="true">←</span>
+        <span data-i18n="project.backToVideo"></span>
+      </a>
+      <p class="project-kicker fade-up" data-i18n="project.interview.kicker"></p>
+      <h1 class="fade-up" data-i18n="project.interview.title"></h1>
+      <ul class="project-meta fade-up">
+        <li><span><i class="fas fa-film" aria-hidden="true"></i><span data-i18n="project.interview.role"></span></span></li>
+        <li><span><i class="fas fa-microphone" aria-hidden="true"></i><span data-i18n="project.interview.guest"></span></span></li>
+        <li><span><i class="fas fa-graduation-cap" aria-hidden="true"></i><span data-i18n="project.interview.school"></span></span></li>
+        <li><span><i class="fas fa-calendar-alt" aria-hidden="true"></i><span data-i18n="project.interview.year"></span></span></li>
+      </ul>
+      <div class="project-media fade-up">
+        <video class="media-native" controls playsinline preload="metadata" poster="assets/images/interview-renault-louvet.jpg">
+          <source src="videos/interview-renault-louvet.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="project-copy fade-up">
+        <p data-i18n="project.interview.p1"></p>
+        <p data-i18n="project.interview.p2"></p>
+        <div class="tech-tags">
+          <span class="tech-tag"><i class="fas fa-film" aria-hidden="true"></i><span data-i18n="projects.tech.davinci"></span></span>
+          <span class="tech-tag"><i class="fas fa-video" aria-hidden="true"></i><span data-i18n="projects.tech.premiere"></span></span>
+          <span class="tech-tag"><i class="fas fa-cut" aria-hidden="true"></i><span data-i18n="projects.tech.edit"></span></span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p data-i18n="footer.copyright"></p>
+  </footer>
+
+  <script src="js/translations.js?v=20"></script>
+  <script src="js/main.js?v=19"></script>
+</body>
+</html>
