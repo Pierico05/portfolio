@@ -18,7 +18,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <link rel="stylesheet" href="css/style.css?v=21">
+  <link rel="stylesheet" href="css/style.css?v=22">
 </head>
 <body>
   <header>
@@ -58,9 +58,15 @@
         <li><span><i class="fas fa-calendar-alt" aria-hidden="true"></i><span data-i18n="project.interview.year"></span></span></li>
       </ul>
       <div class="project-media fade-up">
-        <video class="media-native" controls playsinline preload="metadata" poster="assets/images/interview-renault-louvet.jpg">
-          <source src="videos/interview-renault-louvet.mp4" type="video/mp4">
-        </video>
+        <div class="media-embed is-short">
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/GytXoEeAyis"
+            title="Interview de Renault Louvet"
+            data-i18n-title="project.interview.title"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
       </div>
       <div class="project-copy fade-up">
         <p data-i18n="project.interview.p1"></p>
@@ -79,6 +85,6 @@
   </footer>
 
   <script src="js/translations.js?v=21"></script>
-  <script src="js/main.js?v=19"></script>
+  <script src="js/main.js?v=20"></script>
 </body>
 </html>
