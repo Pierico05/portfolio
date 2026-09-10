@@ -1293,12 +1293,21 @@ body.gallery-open {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(15, 15, 15, 0.28);
+  background: transparent;
   color: var(--secondary-color);
   font-size: 1.6rem;
-  opacity: 0.85;
   pointer-events: none;
-  transition: opacity 0.3s ease, background 0.3s ease;
+  transition: background 0.3s ease;
+}
+
+.video-pick-overlay i {
+  display: grid;
+  place-items: center;
+  width: 3.1rem;
+  height: 3.1rem;
+  border-radius: 50%;
+  background: rgba(15, 15, 15, 0.4);
+  box-shadow: 0 0 0 1px rgba(197, 160, 89, 0.4);
 }
 
 .video-pick:hover img {
@@ -1306,8 +1315,7 @@ body.gallery-open {
 }
 
 .video-pick:hover .video-pick-overlay {
-  opacity: 1;
-  background: rgba(15, 15, 15, 0.42);
+  background: rgba(15, 15, 15, 0.12);
 }
 
 .video-pick-label {
@@ -1319,8 +1327,8 @@ body.gallery-open {
   display: flex;
   flex-direction: column;
   gap: 0.2rem;
-  padding: 2.2rem 1rem 0.9rem;
-  background: linear-gradient(transparent, rgba(0, 0, 0, 0.88));
+  padding: 1.6rem 1rem 0.85rem;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.48));
   font-weight: 600;
   font-size: 0.95rem;
 }
