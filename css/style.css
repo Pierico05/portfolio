@@ -1340,7 +1340,7 @@ body.gallery-open {
   pointer-events: none;
 }
 
-/* Responsive — Mobile 480px / Tablet 768px / Desktop > 768px */
+/* Responsive: mobile 480px, tablet 768px, desktop above 768px */
 @media (min-width: 481px) {
   .navbar {
     padding: 0 1.5rem;

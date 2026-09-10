@@ -73,20 +73,6 @@ const galleryCollections = {
     { type: "image", src: "photos/portrait.jpg", altKey: "projects.photo5Alt" },
     { type: "image", src: "photos/fleur.jpg", altKey: "projects.photo6Alt" }
   ],
-  video: [
-    {
-      type: "video",
-      src: "videos/interview-renault-louvet.mp4",
-      altKey: "projects.video.imgAlt",
-      poster: "assets/images/interview-renault-louvet.jpg"
-    },
-    {
-      type: "video",
-      src: "videos/exercice-montage-girl-on-wave.mp4",
-      altKey: "project.video.gowThumbAlt",
-      poster: "assets/images/exercice-montage-girl-on-wave.jpg"
-    }
-  ]
 };
 
 const galleryState = {
