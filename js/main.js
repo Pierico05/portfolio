@@ -70,7 +70,6 @@ const galleryCollections = {
     { type: "image", src: "photos/packshot.jpg", altKey: "projects.photo2Alt" },
     { type: "image", src: "photos/facade.jpg", altKey: "projects.photo3Alt" },
     { type: "image", src: "photos/pont.jpg", altKey: "projects.photo4Alt" },
-    { type: "image", src: "photos/portrait.jpg", altKey: "projects.photo5Alt" },
     { type: "image", src: "photos/fleur.jpg", altKey: "projects.photo6Alt" }
   ],
 };
