@@ -5,6 +5,7 @@ photo de profil.jpg
 
 # Vidéos trop lourdes pour GitHub (>100 Mo) — restent en local
 videos/*.mp4
+!videos/interview-quentin-dumortier.mp4
 
 # Système
 Thumbs.db
