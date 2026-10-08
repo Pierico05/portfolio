@@ -1175,6 +1175,12 @@ body.gallery-open {
   background: #000;
 }
 
+.project-media.is-square video {
+  width: min(100%, min(78vh, 720px));
+  height: auto;
+  aspect-ratio: 1 / 1;
+}
+
 .project-media video:fullscreen,
 .project-media video:-webkit-full-screen {
   width: 100%;
