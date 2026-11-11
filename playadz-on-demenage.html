@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Exercice de montage : bande annonce de Living in the Age of Airplanes, par Pierryck Seguela." data-i18n="project.avions.metaDescription">
+  <meta name="description" content="Coulisses du déménagement PlayAdz, contenu vertical par Pierryck Seguela." data-i18n="project.demenage.metaDescription">
   <meta name="author" content="Pierryck Seguela">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Living in the Age of Airplanes, Pierryck Seguela" data-i18n="project.avions.metaTitle">
-  <meta property="og:description" content="Exercice de montage : bande annonce de Living in the Age of Airplanes, par Pierryck Seguela." data-i18n="project.avions.metaDescription">
-  <meta property="og:image" content="assets/images/bande-annonce-avions.jpg">
-  <title data-i18n="project.avions.metaTitle">Living in the Age of Airplanes, Pierryck Seguela</title>
+  <meta property="og:title" content="On déménage, Pierryck Seguela" data-i18n="project.demenage.metaTitle">
+  <meta property="og:description" content="Coulisses du déménagement PlayAdz, contenu vertical par Pierryck Seguela." data-i18n="project.demenage.metaDescription">
+  <meta property="og:image" content="assets/images/playadz-on-demenage.jpg">
+  <title data-i18n="project.demenage.metaTitle">On déménage, Pierryck Seguela</title>
   <link rel="icon" href="assets/images/favicon.ico" sizes="any">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png">
   <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicon-192.png">
@@ -18,7 +18,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <link rel="stylesheet" href="css/style.css?v=24">
+  <link rel="stylesheet" href="css/style.css?v=25">
 </head>
 <body>
   <header>
@@ -49,30 +49,25 @@
         <span class="arrow" aria-hidden="true">←</span>
         <span data-i18n="project.backToVideo"></span>
       </a>
-      <p class="project-kicker fade-up" data-i18n="project.avions.kicker"></p>
-      <h1 class="fade-up" data-i18n="project.avions.title"></h1>
+      <p class="project-kicker fade-up" data-i18n="project.demenage.kicker"></p>
+      <h1 class="fade-up" data-i18n="project.demenage.title"></h1>
       <ul class="project-meta fade-up">
-        <li><span><i class="fas fa-cut" aria-hidden="true"></i><span data-i18n="project.avions.role"></span></span></li>
-        <li><span><i class="fas fa-plane" aria-hidden="true"></i><span data-i18n="project.avions.subject"></span></span></li>
-        <li><span><i class="fas fa-graduation-cap" aria-hidden="true"></i><span data-i18n="project.avions.school"></span></span></li>
+        <li><span><i class="fas fa-film" aria-hidden="true"></i><span data-i18n="project.demenage.role"></span></span></li>
+        <li><span><i class="fas fa-briefcase" aria-hidden="true"></i><span data-i18n="project.demenage.client"></span></span></li>
+        <li><span><i class="fas fa-mobile-alt" aria-hidden="true"></i><span data-i18n="project.demenage.format"></span></span></li>
       </ul>
-      <div class="project-media fade-up">
-        <div class="media-embed">
-          <iframe
-            src="https://www.youtube-nocookie.com/embed/PyEVXe6IQcw"
-            title="Living in the Age of Airplanes"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          ></iframe>
-        </div>
+      <div class="project-media fade-up is-short">
+        <video class="media-native" controls playsinline preload="metadata" poster="assets/images/playadz-on-demenage.jpg?v=1" data-i18n-title="project.demenage.title">
+          <source src="videos/playadz-on-demenage.mp4" type="video/mp4">
+        </video>
       </div>
       <div class="project-copy fade-up">
-        <p data-i18n="project.avions.p1"></p>
-        <p data-i18n="project.avions.p2"></p>
-        <p class="project-credit" data-i18n="project.avions.credit"></p>
+        <p data-i18n="project.demenage.p1"></p>
+        <p data-i18n="project.demenage.p2"></p>
         <div class="tech-tags">
-          <span class="tech-tag"><i class="fas fa-cut" aria-hidden="true"></i><span data-i18n="projects.tech.edit"></span></span>
           <span class="tech-tag"><i class="fas fa-film" aria-hidden="true"></i><span data-i18n="projects.tech.davinci"></span></span>
+          <span class="tech-tag"><i class="fas fa-cut" aria-hidden="true"></i><span data-i18n="projects.tech.edit"></span></span>
+          <span class="tech-tag"><i class="fas fa-mobile-alt" aria-hidden="true"></i><span data-i18n="projects.tech.vertical"></span></span>
         </div>
       </div>
     </div>
@@ -82,7 +77,7 @@
     <p data-i18n="footer.copyright"></p>
   </footer>
 
-  <script src="js/translations.js?v=28"></script>
+  <script src="js/translations.js?v=29"></script>
   <script src="js/main.js?v=21"></script>
 </body>
 </html>
