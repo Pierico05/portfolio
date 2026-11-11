@@ -552,18 +552,30 @@ function initAnimations() {
 }
 
 
-function initSingleVideoPlayback() {
-  const videos = Array.from(document.querySelectorAll(".home-video video"));
-  if (!videos.length) {
+function mountYouTubeFacade(button) {
+  const id = button.dataset.youtubeId;
+  if (!id) {
     return;
   }
-  videos.forEach((video) => {
-    video.addEventListener("play", () => {
-      videos.forEach((other) => {
-        if (other !== video && !other.paused) {
-          other.pause();
-        }
-      });
+  const title = button.getAttribute("aria-label") || "YouTube";
+  const frame = document.createElement("div");
+  frame.className = "media-embed is-short yt-frame";
+  const iframe = document.createElement("iframe");
+  iframe.src = `https://www.youtube.com/embed/${id}?autoplay=1&rel=0&modestbranding=1`;
+  iframe.title = title;
+  iframe.allow =
+    "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+  iframe.allowFullscreen = true;
+  iframe.referrerPolicy = "strict-origin-when-cross-origin";
+  frame.appendChild(iframe);
+  button.replaceWith(frame);
+}
+
+function initYouTubeFacades() {
+  document.querySelectorAll(".yt-facade[data-youtube-id]").forEach((button) => {
+    button.addEventListener("click", () => {
+      // unload other active embeds back? keep simple: just mount this one
+      mountYouTubeFacade(button);
     });
   });
 }
@@ -572,7 +584,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initUIComponents();
   createTimeline();
   createStackItems();
-  initSingleVideoPlayback();
+  initYouTubeFacades();
   createFloatingIcons();
   applyLanguage(currentLang);
   setupEventListeners();

@@ -5,10 +5,6 @@ photo de profil.jpg
 
 # Vidéos trop lourdes pour GitHub (>100 Mo) — restent en local
 videos/*.mp4
-!videos/playadz-paris-creator-week.mp4
-!videos/playadz-on-demenage.mp4
-!videos/playadz-pub-streammates.mp4
-!videos/playadz-pov.mp4
 
 # Système
 Thumbs.db
