@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio vidéo de Pierryck Seguela. Formats verticaux, tournage et montage." data-i18n="meta.description">
+  <meta name="description" content="Portfolio de Pierryck Seguela. Création et production de contenus visuels, vidéo et photo." data-i18n="meta.description">
   <meta name="author" content="Pierryck Seguela">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Pierryck Seguela, vidéaste" data-i18n="meta.title">
-  <meta property="og:description" content="Portfolio vidéo de Pierryck Seguela. Formats verticaux, tournage et montage." data-i18n="meta.description">
+  <meta property="og:title" content="Pierryck Seguela — création et production de contenus visuels" data-i18n="meta.title">
+  <meta property="og:description" content="Portfolio de Pierryck Seguela. Création et production de contenus visuels, vidéo et photo." data-i18n="meta.description">
   <meta property="og:image" content="assets/images/og.jpg">
-  <title data-i18n="meta.title">Pierryck Seguela, vidéaste</title>
+  <title data-i18n="meta.title">Pierryck Seguela — création et production de contenus visuels</title>
   <link rel="icon" href="assets/images/favicon.ico" sizes="any">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png">
   <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicon-192.png">
@@ -18,7 +18,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <link rel="stylesheet" href="css/style.css?v=26">
+  <link rel="stylesheet" href="css/style.css?v=27">
 </head>
 <body>
   <header>
@@ -52,10 +52,15 @@
               <p class="hero-role" data-i18n="hero.role"></p>
             </div>
           </div>
+          <p class="hero-kicker fade-up" data-i18n="hero.kicker"></p>
           <p class="hero-field fade-up" data-i18n="hero.field"></p>
+          <p class="hero-duration fade-up" data-i18n="hero.duration"></p>
+          <p class="hero-location fade-up">
+            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+            <span data-i18n="hero.location"></span>
+          </p>
           <div class="hero-ctas fade-up">
             <a href="#projects" class="btn btn-primary"><i class="fas fa-film" aria-hidden="true"></i><span data-i18n="hero.ctaWork"></span></a>
-            <a href="#contact" class="btn btn-secondary"><i class="fas fa-envelope" aria-hidden="true"></i><span data-i18n="hero.ctaContact"></span></a>
           </div>
         </div>
       </div>
@@ -63,47 +68,63 @@
 
     <section id="projects" class="projects">
       <div class="container">
-        <h2 class="section-title fade-up" data-i18n="projects.title"></h2>
-        <div class="projects-grid">
-          <a class="project-card project-card-video fade-up" id="projets-video" href="projet-video.html">
-            <div class="project-image">
-              <img src="assets/images/playadz-paris-creator-week.jpg?v=1" alt="" width="1080" height="1920" data-i18n-alt="projects.video.imgAlt">
-              <div class="project-overlay" aria-hidden="true">
-                <i class="fas fa-play"></i>
-              </div>
-            </div>
-            <div class="project-content">
-              <h3 class="project-title">
-                <i class="fas fa-video" aria-hidden="true"></i>
-                <span data-i18n="projects.video.title"></span>
-              </h3>
-              <p class="project-description" data-i18n="projects.video.description"></p>
-              <span class="project-link">
-                <span data-i18n="projects.video.cta"></span>
-                <span class="arrow" aria-hidden="true">→</span>
-              </span>
-            </div>
-          </a>
+        <h2 class="section-title fade-up" data-i18n="projects.video.title"></h2>
+        <div class="home-video-grid fade-up">
+          <figure class="home-video">
+            <video controls playsinline preload="metadata" poster="assets/images/playadz-paris-creator-week.jpg?v=1" data-i18n-title="project.paris.title">
+              <source src="videos/playadz-paris-creator-week.mp4" type="video/mp4">
+            </video>
+            <figcaption>
+              <span data-i18n="project.paris.title"></span>
+              <span data-i18n="project.paris.kicker"></span>
+            </figcaption>
+          </figure>
+          <figure class="home-video">
+            <video controls playsinline preload="metadata" poster="assets/images/playadz-on-demenage.jpg?v=1" data-i18n-title="project.demenage.title">
+              <source src="videos/playadz-on-demenage.mp4" type="video/mp4">
+            </video>
+            <figcaption>
+              <span data-i18n="project.demenage.title"></span>
+              <span data-i18n="project.demenage.kicker"></span>
+            </figcaption>
+          </figure>
+          <figure class="home-video">
+            <video controls playsinline preload="metadata" poster="assets/images/playadz-pub-streammates.jpg?v=1" data-i18n-title="project.streammates.title">
+              <source src="videos/playadz-pub-streammates.mp4" type="video/mp4">
+            </video>
+            <figcaption>
+              <span data-i18n="project.streammates.title"></span>
+              <span data-i18n="project.streammates.kicker"></span>
+            </figcaption>
+          </figure>
+          <figure class="home-video">
+            <video controls playsinline preload="metadata" poster="assets/images/playadz-pov.jpg?v=1" data-i18n-title="project.pov.title">
+              <source src="videos/playadz-pov.mp4" type="video/mp4">
+            </video>
+            <figcaption>
+              <span data-i18n="project.pov.title"></span>
+              <span data-i18n="project.pov.kicker"></span>
+            </figcaption>
+          </figure>
+        </div>
 
-          <a class="project-card fade-up" id="projets-photo" href="projet-photo.html">
-            <div class="project-image">
-              <img src="photos/packshot.jpg" alt="" width="1600" height="900" data-i18n-alt="projects.photo.imgAlt">
-              <div class="project-overlay" aria-hidden="true">
-                <i class="fas fa-expand"></i>
-              </div>
-            </div>
-            <div class="project-content">
-              <h3 class="project-title">
-                <i class="fas fa-camera" aria-hidden="true"></i>
-                <span data-i18n="projects.photo.title"></span>
-              </h3>
-              <p class="project-description" data-i18n="projects.photo.description"></p>
-              <span class="project-link">
-                <span data-i18n="projects.photo.cta"></span>
-                <span class="arrow" aria-hidden="true">→</span>
-              </span>
-            </div>
-          </a>
+        <h2 class="section-title fade-up" id="photos" data-i18n="projects.photo.title"></h2>
+        <div class="project-photo-grid fade-up">
+          <button type="button" class="photo-thumb" data-gallery-index="0">
+            <img src="photos/aston-martin.jpg" alt="" data-i18n-alt="projects.photo1Alt">
+          </button>
+          <button type="button" class="photo-thumb" data-gallery-index="1">
+            <img src="photos/packshot.jpg" alt="" data-i18n-alt="projects.photo2Alt">
+          </button>
+          <button type="button" class="photo-thumb" data-gallery-index="2">
+            <img src="photos/facade.jpg" alt="" data-i18n-alt="projects.photo3Alt">
+          </button>
+          <button type="button" class="photo-thumb" data-gallery-index="3">
+            <img src="photos/pont.jpg" alt="" data-i18n-alt="projects.photo4Alt">
+          </button>
+          <button type="button" class="photo-thumb" data-gallery-index="4">
+            <img src="photos/fleur.jpg" alt="" data-i18n-alt="projects.photo6Alt">
+          </button>
         </div>
       </div>
     </section>
@@ -129,7 +150,28 @@
     <p data-i18n="footer.copyright"></p>
   </footer>
 
-  <script src="js/translations.js?v=30"></script>
-  <script src="js/main.js?v=22"></script>
+  <div class="gallery" id="gallery" hidden>
+    <div class="gallery-backdrop" data-gallery-close></div>
+    <div class="gallery-dialog" role="dialog" aria-modal="true" aria-labelledby="gallery-title">
+      <h2 id="gallery-title" class="visually-hidden"></h2>
+      <button type="button" class="gallery-close" data-gallery-close data-i18n-aria="gallery.close">
+        <i class="fas fa-times" aria-hidden="true"></i>
+      </button>
+      <button type="button" class="gallery-nav gallery-prev" data-i18n-aria="gallery.prev">
+        <i class="fas fa-chevron-left" aria-hidden="true"></i>
+      </button>
+      <div class="gallery-stage">
+        <img id="gallery-image" alt="">
+        <video id="gallery-video" controls playsinline preload="metadata"></video>
+      </div>
+      <button type="button" class="gallery-nav gallery-next" data-i18n-aria="gallery.next">
+        <i class="fas fa-chevron-right" aria-hidden="true"></i>
+      </button>
+      <p id="gallery-caption" class="gallery-caption"></p>
+    </div>
+  </div>
+
+  <script src="js/translations.js?v=31"></script>
+  <script src="js/main.js?v=23"></script>
 </body>
 </html>
