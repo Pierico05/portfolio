@@ -1181,6 +1181,14 @@ body.gallery-open {
   aspect-ratio: 1 / 1;
 }
 
+.project-media.is-short video {
+  width: min(100%, calc(min(78vh, 900px) * 9 / 16));
+  max-height: min(78vh, 900px);
+  height: auto;
+  aspect-ratio: 9 / 16;
+  margin-inline: auto;
+}
+
 .project-media video:fullscreen,
 .project-media video:-webkit-full-screen {
   width: 100%;
