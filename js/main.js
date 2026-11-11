@@ -551,10 +551,28 @@ function initAnimations() {
   });
 }
 
+
+function initSingleVideoPlayback() {
+  const videos = Array.from(document.querySelectorAll(".home-video video"));
+  if (!videos.length) {
+    return;
+  }
+  videos.forEach((video) => {
+    video.addEventListener("play", () => {
+      videos.forEach((other) => {
+        if (other !== video && !other.paused) {
+          other.pause();
+        }
+      });
+    });
+  });
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   initUIComponents();
   createTimeline();
   createStackItems();
+  initSingleVideoPlayback();
   createFloatingIcons();
   applyLanguage(currentLang);
   setupEventListeners();
